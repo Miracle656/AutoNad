@@ -1,0 +1,19 @@
+{
+  "name": "autonad",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "contracts",
+    "agent",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "agent": "npm run start --workspace=agent",
+    "agent:dev": "npm run dev --workspace=agent",
+    "compile": "npm run compile --workspace=contracts",
+    "deploy": "npm run deploy --workspace=contracts",
+    "build": "npm run build --workspace=frontend",
+    "install:all": "npm install"
+  }
+}
